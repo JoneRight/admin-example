@@ -92,6 +92,19 @@ export const constantRoutes = [
       },
     ],
   },
+  {
+    path: '/aaa',
+    component: Layout,
+    redirect: '/aaa',
+    children: [
+      {
+        path: 'aaa',
+        component: () => import('@/views/quill/index'),
+        name: 'aaa',
+        meta: { title: 'aaa', icon: 'aaa', affix: true },
+      },
+    ],
+  },
 ]
 
 /**
